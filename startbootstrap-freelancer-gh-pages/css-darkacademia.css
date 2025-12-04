@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* GLOBALS */
+body {
+    background-color: #1b1b1b !important;
+    color: #e9decf !important;
+    font-family: 'Merriweather', serif !important;
+    line-height: 1.7 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #f5f0e6 !important;
+    font-family: 'Playfair Display', serif !important;
+    letter-spacing: 0.5px;
+}
+
+p, li, span, a {
+    color: #e9decf !important;
+}
+
+/* LINKS */
+a {
+    color: #bfa87b !important;
+    text-decoration: none;
+}
+a:hover {
+    color: #f5f0e6 !important;
+}
+
+/* NAVBAR */
+.navbar, .navbar-light, .navbar-dark {
+    background-color: #2d2b2a !important;
+    border-bottom: 1px solid #bfa87b !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #e9decf !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #bfa87b !important;
+}
+
+/* BUTTONS */
+.btn, .btn-primary, .btn-outline-primary {
+    background-color: #5a2a2a !important;
+    border-color: #5a2a2a !important;
+    color: #e9decf !important;
+}
+.btn:hover, .btn-primary:hover, .btn-outline-primary:hover {
+    background-color: #7c3a3a !important;
+    border-color: #7c3a3a !important;
+    color: #f5f0e6 !important;
+}
+
+/* SECTIONS / BACKGROUNDS */
+section, .section, .bg-light, .bg-white {
+    background-color: #1b1b1b !important;
+    color: #e9decf !important;
+}
+
+.bg-dark, .bg-secondary {
+    background-color: #2d2b2a !important;
+}
+
+/* CARDS */
+.card {
+    background-color: #2d2b2a !important;
+    color: #e9decf !important;
+    border: 1px solid #3d3a39 !important;
+}
+.card-title, .card-header {
+    color: #f5f0e6 !important;
+}
+.card a {
+    color: #bfa87b !important;
+}
+.card a:hover {
+    color: #e9decf !important;
+}
+
+/* FORMS */
+.form-control {
+    background-color: #2d2b2a !important;
+    border: 1px solid #3d3a39 !important;
+    color: #f5f0e6 !important;
+}
+.form-control:focus {
+    background-color: #2d2b2a !important;
+    border-color: #bfa87b !important;
+    color: #f5f0e6 !important;
+    box-shadow: none !important;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2d2b2a !important;
+    color: #e9decf !important;
+    border-top: 1px solid #bfa87b !important;
+}
+
+/* IMAGES — subtle warm tint for mood */
+img {
+    filter: contrast(0.95) brightness(0.9) saturate(0.7) !important;
+    border-radius: 4px;
+}
+
+/* TEXTURE OVERLAY (optional aesthetic grain) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    opacity: 0.16;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* HEADERS / HERO SECTIONS */
+.hero, .masthead, .header, .page-header {
+    background-color: #1b1b1b !important;
+    color: #f5f0e6 !important;
+}
+
+/* BORDER ACCENTS */
+hr {
+    border-top: 1px solid #bfa87b !important;
+}
