@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(lab2_assets/HagiaSophiaMosaic.jpg); background-size:contain;">
+                <div class="center title">
+                    <!--title text-->
+                    <h1>Byzantine Mosaic Map</h1>
+                    <!--subtitle or author-->
+                    <p class="author">Ronald Kelley</p>
+                </div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="center">
+                    <p>This map was inspired by the ceramic and glass colored tiles of the mosaics in the Byzantine Empire.</p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="lab2_assets/InspirationByzantine2.jpg">
+                </div>
+                <div class="right">
+                    <p class="vert-center">The map uses a tile texture that was traced over and colored with traditional Byzantine golds and blues.</p>
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item" style = "display: flex; justify-content: center; align-items: center; height: 100vh;">
+                    <img src="lab2_assets/USAMosaic.png" data-slide="1" class="fill" alt="Centered Image">
+                    <img src="lab2_assets/RussiaMosaic.png" data-slide="2" class="fill hidden" alt = "Centered Image">
+                    <img src="lab2_assets/AustraliaMosaic.jpg" data-slide="3" class="fill hidden" alt="Centered Image">
+                    <img src="lab2_assets/AntarcticaMosaic.png" data-slide="4" class="fill hidden" alt="Centered Image">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">North America looks like this.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Northern Countries like Russia become more numerous in their tile density due to longitudinal lines converging..</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Australia looks like this</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Antarctica's tiles are hypnotizingly beautiful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="lab2_assets/EuropeZoomedOut.jpg">
+                            <p class="caption">A zoomed-out view of the Historical Roman Empire.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="lab2_assets/ByzantiumZoom.jpg">
+                            <p class="caption">A mid-scale view centered the Eastern Roman Empire, also known as the Byzantine Empire.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="lab2_assets/ConstIsthmus.jpg">
+                            <p class="caption">A large-scale view of the Constantinople Isthmus.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="lab2_assets/ConstMaxZoom.jpg">
+                            <p class="caption">The Historic Streets of Constantinople.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src="https://api.mapbox.com/styles/v1/rojopotus/cmgkzmeaa001501sa9douh5cv.html?title=view&access_token=pk.eyJ1Ijoicm9qb3BvdHVzIiwiYSI6ImNtZ2t6aGNyZjB4a2MybW92Z2NwcXVheHUifQ.yg2pTk6DPqOEKuBq5Oj8mQ&zoomwheel=true&fresh=true#0/0/0" width="800" height="5000"></iframe>
+                </div>
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>Map created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
